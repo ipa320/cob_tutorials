@@ -1,0 +1,14 @@
+<package>
+  <description brief="cob_script_server_tutorial">
+
+     cob_script_server_tutorial
+
+  </description>
+  <author>Nadia Hammoudeh</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cob_script_server_tutorial</url>
+
+</package>
+
+

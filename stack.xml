@@ -1,0 +1,9 @@
+<stack>
+  <description brief="cob_tutorials">cob_tutorials</description>
+  <author>Maintained by Nadia Hammoudeh</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cob_tutorials</url>
+  <depend stack="ros" />
+
+</stack>
