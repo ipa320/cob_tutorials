@@ -9,6 +9,9 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/cob_script_server_tutorial</url>
 
+  <depend package="kinematics_msgs"/>
+  <depend package="cob_script_server"/>
+
 </package>
 
 

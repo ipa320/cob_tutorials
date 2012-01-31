@@ -3,8 +3,9 @@
 import time
 
 import roslib
-roslib.load_manifest('cob_script_server')
+roslib.load_manifest('cob_script_server_tutorial')
 import rospy
+
 
 from simple_script_server import script
 
@@ -13,7 +14,7 @@ from geometry_msgs.msg import *
 from kinematics_msgs.srv import *
 
 #this should be in manipulation_msgs
-from cob_mmcontroller.msg import *
+#from cob_mmcontroller.msg import *
 
 class GraspScript(script):
 		
