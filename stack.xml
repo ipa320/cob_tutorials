@@ -4,11 +4,10 @@
   <license>BSD</license>  
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/cob_tutorials</url>
-  <depend stack="arm_navigation" /> <!-- kinematics_msgs -->
   <depend stack="cob_command_tools" /> <!-- cob_script_server -->
   <depend stack="cob_environments" /> <!-- cob_default_env_config -->
   <depend stack="cob_manipulation" /> <!-- cob_manipulator -->
-  <depend stack="cob_navigation" /> <!-- cob_linear_nav, cob_2dnav -->
+  <depend stack="cob_navigation" /> <!-- cob_navigation_global -->
   <depend stack="cob_robots" /> <!-- cob_default_robot_config -->
   <depend stack="cob_simulation" /> <!-- cob_bringup_sim -->
   <depend stack="ros" />
