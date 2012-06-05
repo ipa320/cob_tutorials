@@ -1,0 +1,17 @@
+<package>
+  <description brief="cob_scenario_example">
+
+     cob_scenario_example
+
+  </description>
+  <author>fmw</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cob_scenario_example</url>
+  <depend package="cob_bringup"/>
+  <depend package="cob_navigation_global"/>
+  <depend package="cob_generic_states"/>
+
+</package>
+
+
