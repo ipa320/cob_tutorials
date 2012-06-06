@@ -1,17 +1,16 @@
 <package>
   <description brief="cob_scenario_example">
 
-     cob_scenario_example
+     This package is an example scenario package. You can use this as a copy and paste boilerplate for setting u your own scenario.
 
   </description>
-  <author>fmw</author>
-  <license>BSD</license>
+  <author>Florian Weisshardt</author>
+  <license>LGPL</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/cob_scenario_example</url>
+
   <depend package="cob_bringup"/>
   <depend package="cob_navigation_global"/>
   <depend package="cob_generic_states"/>
 
 </package>
-
-

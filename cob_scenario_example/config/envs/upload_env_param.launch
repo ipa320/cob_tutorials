@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- upload ROBOT_ENV parameters to parameter server -->
+	<rosparam command="load" ns="/script_server/base" file="$(find cob_scenario_example)/config/envs/$(env ROBOT_ENV)/navigation_goals.yaml"/>
+	<!-- fill in more here. see cob_default_env_config -->
+	
+</launch>
