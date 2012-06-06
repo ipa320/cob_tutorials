@@ -2,7 +2,11 @@
 <launch>
 
 	<!-- upload ROBOT parameters to parameter server -->
-	<rosparam command="load" ns="/script_server/arm" file="$(find cob_example_scenario)/config/robots/$(env ROBOT)/arm_joint_configurations.yaml"/>
-	<!-- fill in more here, e.g. for torso, tray, sdh or head. see cob_default_robot_config -->
+	
+	<!-- ############################################### -->
+	<!-- ### TODO: add your robot configuration here ### -->
+	<!-- ###       see cob_default_robot_config      ### -->
+	<!-- ############################################### -->
+	<rosparam command="load" ns="/script_server/arm" file="$(find cob_scenario_example)/config/robots/$(env ROBOT)/arm_joint_configurations.yaml"/>
 
 </launch>

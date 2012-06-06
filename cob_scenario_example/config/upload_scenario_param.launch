@@ -2,7 +2,10 @@
 <launch>
 
 	<!-- upload scenario parameters to parameter server -->
-	<rosparam command="load" ns="/scenario" file="$(find cob_example_scenario)/config/scenario_params.yaml"/>
-	<!-- fill in more here, e.g. for torso, tray, sdh or head. see cob_default_robot_config -->
+	
+	<!-- ################################################## -->
+	<!-- ### TODO: add your scenario configuration here ### -->
+	<!-- ################################################## -->
+	<rosparam command="load" ns="/scenario" file="$(find cob_scenario_example)/config/common/scenario_params.yaml"/>
 
 </launch>
