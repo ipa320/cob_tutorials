@@ -2,10 +2,10 @@
 <launch>
 
 	<!-- define default values for launch files arguments (do not change here, but in scenario.launch) -->
-	<arg name="pc1" default="localhost"/>
-	<arg name="pc2" default="localhost"/>
-	<arg name="pc3" default="localhost"/>
-	<arg name="robot_config" default="asd"/> <!--"$(find cob_default_robot_config)/upload_param.launch"/-->
+	<arg name="pc1" />
+	<arg name="pc2" />
+	<arg name="pc3" />
+	<arg name="robot_config" default="$(find cob_default_robot_config)/upload_param.launch"/>
 	<arg name="env_config" default="$(find cob_default_env_config)/upload_param.launch"/>
 	<arg name="map" default="$(find cob_default_env_config)/$(env ROBOT_ENV)/map.yaml"/>
 
@@ -42,7 +42,7 @@
 		<!-- ############################################## -->
 		
 		<!-- start perception components -->
-		<!--include file="$(find cob_datamatrix)/launch/datamatrix.launch" /-->
+		<include file="$(find cob_datamatrix)/launch/datamatrix.launch" />
 		
 	</group>
 
