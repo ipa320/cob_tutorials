@@ -12,5 +12,7 @@
   <depend package="cob_bringup"/>
   <depend package="cob_navigation_global"/>
   <depend package="cob_generic_states"/>
+  <depend package="cob_arm_navigation"/>
+  <depend package="cob_marker"/>
 
 </package>
