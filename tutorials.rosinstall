@@ -35,8 +35,8 @@
     local-name: cob_manipulation
     version: tutorials
 - git:
-    uri: 'git://github.com/ipa320/cob_manipulation_experimental.git'
-    local-name: cob_manipulation_experimental
+    uri: 'git://github.com/ipa320/cob_manipulation_sandbox.git'
+    local-name: cob_manipulation_sandbox
     version: tutorials
 - git:
     uri: 'git://github.com/ipa320/cob_navigation.git'
