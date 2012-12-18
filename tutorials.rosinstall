@@ -11,6 +11,10 @@
     local-name: cob_scenarios
     version: tutorials
 - git:
+    uri: 'git://github.com/ipa320/cob_scenario_states.git'
+    local-name: cob_scenario_states
+    version: tutorials
+- git:
     uri: 'git://github.com/ipa320/cob_command_tools.git'
     local-name: cob_command_tools
     version: tutorials
