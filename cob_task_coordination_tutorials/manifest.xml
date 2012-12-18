@@ -1,0 +1,17 @@
+<package>
+  <description brief="cob_task_coordination_tutorials">
+
+     cob_task_coordination_tutorials
+
+  </description>
+  <author>Florian Weisshardt</author>
+  <license>LGPL</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cob_task_coordination_tutorials</url>
+
+  <depend package="cob_generic_states_experimental"/>
+  <depend package="cob_object_detection_msgs"/>
+
+</package>
+
+

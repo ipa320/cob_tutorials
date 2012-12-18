@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- load objects -->
+	<include file="$(find cob_gazebo_objects)/launch/upload_param.launch"/>
+	<node name="spawn_all_objects" pkg="cob_bringup_sim" type="spawn_object.py" args="all" respawn="false" output="screen" />
+
+	<!-- start navigation -->
+	<include file="$(find cob_navigation_global)/launch/2dnav_ros_dwa.launch"/>
+
+	<!-- start perception -->
+	<include file="$(find cob_object_detection_fake)/ros/launch/object_detection_fake.launch"/>
+
+</launch>
