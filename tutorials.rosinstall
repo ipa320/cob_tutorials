@@ -3,6 +3,10 @@
 - other:
     local-name: /opt/ros/electric/stacks
 - git:
+    uri: 'git://github.com/ipa320/cob_tutorials.git'
+    local-name: cob_tutorials
+    version: tutorials
+- git:
     uri: 'git://github.com/ipa320/cob_scenarios.git'
     local-name: cob_scenarios
     version: tutorials
