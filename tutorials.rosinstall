@@ -1,0 +1,48 @@
+- other:
+    local-name: /opt/ros/electric/ros
+- other:
+    local-name: /opt/ros/electric/stacks
+- git:
+    uri: 'git://github.com/ipa320/cob_scenarios.git'
+    local-name: cob_scenarios
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_command_tools.git'
+    local-name: cob_command_tools
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_common.git'
+    local-name: cob_common
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_driver.git'
+    local-name: cob_driver
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_environments.git'
+    local-name: cob_environments
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_manipulation.git'
+    local-name: cob_manipulation
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_navigation.git'
+    local-name: cob_navigation
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_object_perception.git'
+    local-name: cob_object_perception
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_robots.git'
+    local-name: cob_robots
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_simulation.git'
+    local-name: cob_simulation
+    version: tutorials
+- git:
+    uri: 'git://github.com/ipa320/schunk_modular_robotics.git'
+    local-name: schunk_modular_robotics
+    version: tutorials
