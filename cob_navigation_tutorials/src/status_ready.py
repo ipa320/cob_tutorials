@@ -9,7 +9,8 @@ sss = simple_script_server()
 		
 if __name__ == "__main__":
 	rospy.init_node("navigation_tutorials")
-	
+	rospy.sleep(2)
+
 	# move robot components concurrent
 	handle_arm = sss.move("arm","folded",False)
 	handle_tray = sss.move("tray","down",False)
