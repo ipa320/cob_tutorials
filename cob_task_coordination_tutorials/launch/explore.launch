@@ -1,12 +1,18 @@
 <?xml version="1.0"?>
 <launch>
 
+	<arg name="robot" default="$(optenv ROBOT !!NO_ROBOT_SET!!)"/>
+	<arg name="robot_env" default="$(optenv ROBOT_ENV !!NO_ROBOT_ENV_SET!!)"/>
+
 	<!-- load objects -->
-	<rosparam command="load" ns="objects" file="$(find cob_task_coordination_tutorials)/config/$(env ROBOT_ENV)/object_locations.yaml"/>
+	<rosparam command="load" ns="objects" file="$(find cob_task_coordination_tutorials)/config/$(arg robot_env)/object_locations.yaml"/>
 	<node name="spawn_all_objects" pkg="cob_bringup_sim" type="spawn_object.py" args="all" respawn="false" output="screen" />
 
 	<!-- start navigation -->
-	<include file="$(find cob_navigation_global)/launch/2dnav_ros_dwa.launch"/>
+	<include file="$(find cob_navigation_global)/launch/2dnav_ros_dwa.launch">
+		<arg name="robot" value="$(arg robot)"/>
+		<arg name="robot_env" value="$(arg robot_env)"/>
+	</include>
 
 	<!-- start perception -->
 	<include file="$(find cob_object_detection_fake)/ros/launch/object_detection_fake.launch"/>
