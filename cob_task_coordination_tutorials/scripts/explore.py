@@ -100,7 +100,7 @@ class Explore(smach.StateMachine):
 						   'failed':'failed'})
 
 			smach.StateMachine.add('ANNOUNCE',AnnounceFoundObjects(),
-			  transitions={'announced':'finished',
+			  transitions={'announced':'SELECT_GOAL',
 						   'not_announced':'SELECT_GOAL',
 						   'failed':'failed'})
 
