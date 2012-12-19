@@ -32,7 +32,8 @@ class SelectNavigationGoal(smach.State):
 		th_max = 3.14
 		th_increment = 2*3.1414926/4
 		
-		# generate new list, if list is empty
+		# generate new list of poses, if list is empty
+		# this will just spawn a rectangular grid 
 		if len(self.goals) == 0:	
 			x = x_min
 			y = y_min
@@ -52,7 +53,7 @@ class SelectNavigationGoal(smach.State):
 				y = y_min
 				th = th_min
 
-		#print self.goals
+		# define here how to handle list of poses
 		#userdata.base_pose = self.goals.pop() # takes last element out of list
 		userdata.base_pose = self.goals.pop(random.randint(0,len(self.goals)-1)) # takes random element out of list
 
@@ -84,23 +85,24 @@ class Explore(smach.StateMachine):
 		with self:
 
 			smach.StateMachine.add('SELECT_GOAL',SelectNavigationGoal(),
-									transitions={'selected':'MOVE_BASE',
-												'not_selected':'finished',
-												'failed':'failed'})
+			  transitions={'selected':'MOVE_BASE',
+						   'not_selected':'finished',
+						   'failed':'failed'})
 
 			smach.StateMachine.add('MOVE_BASE',ApproachPose(),
-									transitions={'reached':'DETECT',
-												'not_reached':'SELECT_GOAL',
-												'failed':'failed'})
-			smach.StateMachine.add('DETECT',DetectObjectsFrontside(['milk1','milk2','milk3','salt'],mode="one"),
-									transitions={'detected':'ANNOUNCE',
-												'not_detected':'ANNOUNCE',
-												'failed':'failed'})
+			  transitions={'reached':'DETECT',
+						   'not_reached':'SELECT_GOAL',
+						   'failed':'failed'})
+
+			smach.StateMachine.add('DETECT',DetectObjectsFrontside(['milk1','milk2','milk3','milk4','milk5','milk6','salt1','salt2','salt3','salt4'],mode="one"),
+			  transitions={'detected':'ANNOUNCE',
+						   'not_detected':'SELECT_GOAL',
+						   'failed':'failed'})
 
 			smach.StateMachine.add('ANNOUNCE',AnnounceFoundObjects(),
-									transitions={'announced':'SELECT_GOAL',
-												'not_announced':'SELECT_GOAL',
-												'failed':'failed'})
+			  transitions={'announced':'finished',
+						   'not_announced':'SELECT_GOAL',
+						   'failed':'failed'})
 
 
 

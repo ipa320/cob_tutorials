@@ -2,7 +2,7 @@
 <launch>
 
 	<!-- load objects -->
-	<include file="$(find cob_gazebo_objects)/launch/upload_param.launch"/>
+	<rosparam command="load" ns="objects" file="$(find cob_task_coordination_tutorials)/config/$(env ROBOT_ENV)/object_locations.yaml"/>
 	<node name="spawn_all_objects" pkg="cob_bringup_sim" type="spawn_object.py" args="all" respawn="false" output="screen" />
 
 	<!-- start navigation -->
