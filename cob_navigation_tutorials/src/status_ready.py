@@ -24,6 +24,9 @@ if __name__ == "__main__":
 	handle_torso.wait()
 	handle_sdh.wait()
 	handle_head.wait()
+
+	# move to side
+	sss.move_base_rel("base",[0,-0.1,0])
 	
 	# robot is ready now
 	sss.say(["I am ready now."])
