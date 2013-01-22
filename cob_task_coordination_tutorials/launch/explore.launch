@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
+	<arg name="sim" default="false"/>
 	<arg name="robot" default="$(optenv ROBOT !!NO_ROBOT_SET!!)"/>
 	<arg name="robot_env" default="$(optenv ROBOT_ENV !!NO_ROBOT_ENV_SET!!)"/>
 
@@ -15,6 +16,8 @@
 	</include>
 
 	<!-- start perception -->
-	<include file="$(find cob_object_detection_fake)/ros/launch/object_detection_fake.launch"/>
+	<include if="$(arg sim)" file="$(find cob_object_detection_fake)/ros/launch/object_detection_fake.launch"/>
+	<include unless="$(arg sim)" file="$(find cob_object_detection)/ros/launch/object_detection.launch"/>
+	<include unless="$(arg sim)" file="$(find cob_sensor_fusion)/ros/launch/sensor_fusion_stereo.launch"/>
 
 </launch>
