@@ -1,0 +1,95 @@
+milk1:
+  model: milk
+  model_type: urdf
+  position: [-1.5, -0.5, 1.5]
+  orientation: [0, 0, 0]
+
+milk2:
+  model: milk
+  model_type: urdf
+  position: [-1.5, -1.8, 1.5 ]
+  orientation: [0, 0, 1.570796]
+
+milk3:
+  model: milk
+  model_type: urdf
+  position: [3.9, -1.8, 1.5 ]
+  orientation: [0, 0, 1.570796]
+
+milk4:
+  model: milk
+  model_type: urdf
+  position: [1.5, -1.5, 1.5 ]
+  orientation: [0, 0, 0.7854]
+
+milk5:
+  model: milk
+  model_type: urdf
+  position: [0.1, 1.3, 1.5 ]
+  orientation: [0, 0, 0]
+
+milk6:
+  model: milk
+  model_type: urdf
+  position: [4.0, -2.8, 1.5 ]
+  orientation: [0, 0, 0]
+
+salt1:
+  model: salt
+  model_type: urdf
+  position: [ -1.5, -1.0, 1.5 ]
+  orientation: [0, 0, 1.570796]
+
+salt2:
+  model: salt
+  model_type: urdf
+  position: [ -1.5, -1.2, 1.5 ]
+  orientation: [0, 0, 1.570796]
+
+salt3:
+  model: salt
+  model_type: urdf
+  position: [ -0.1, 1.3, 1.5 ]
+  orientation: [0, 0, 1.570796]
+
+salt4:
+  model: salt
+  model_type: urdf
+  position: [ 1.3, -1.6, 1.5 ]
+  orientation: [0, 0, 1.570796]
+
+table_ikea:
+  model: table_ikea
+  model_type: urdf.xacro
+  position: [1.5,-1.5, 0]
+  orientation: [0, 0, 0]
+
+bookcase:
+  model: bookcase
+  model_type: urdf.xacro
+  position: [3.95, -1.8, 0]
+  orientation: [0, 0, 0]
+
+chair:
+  model: chair
+  model_type: urdf.xacro
+  position: [0.7, 1.2, 0.1]
+  orientation: [0, 0, 1.5708]
+
+cabinet:
+  model: cabinet
+  model_type: urdf.xacro
+  position: [0,1.35,0]
+  orientation: [0, 0, 0]
+
+cabinet_with_door:
+  model: cabinet_with_door
+  model_type: urdf.xacro
+  position: [4.05, -2.8, 0]
+  orientation: [0, 0, 0]
+
+couch:
+  model: couch
+  model_type: urdf.xacro
+  position: [3.6,0.6,0]
+  orientation: [0, 0,-1.57079]
