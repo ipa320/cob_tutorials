@@ -53,7 +53,7 @@ class GraspScript(script):
 		return (result, resp.error_code)
 
 	def Run(self):
-		self.iks = rospy.ServiceProxy('/arm_kinematics/get_ik', GetPositionIK)
+		self.iks = rospy.ServiceProxy('/compute_ik', GetPositionIK)
 		listener = tf.TransformListener(True, rospy.Duration(10.0))
 		rospy.sleep(2)
 
