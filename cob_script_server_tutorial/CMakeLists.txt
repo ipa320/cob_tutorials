@@ -31,4 +31,4 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 
 # rostest
-rosbuild_add_roslaunch_check(launch ROBOT=cob3-3 ROBOT_ENV=ipa-kitchen)
+rosbuild_add_roslaunch_check(launch ROBOT=cob4-2 ROBOT_ENV=ipa-apartment)
