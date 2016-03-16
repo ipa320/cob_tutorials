@@ -1,60 +1,87 @@
-- other:
-    local-name: /opt/ros/electric/ros
-- other:
-    local-name: /opt/ros/electric/stacks
+#bringup
 - git:
-    uri: 'git://github.com/ipa320/cob_tutorials.git'
-    local-name: cob_tutorials
-    version: tutorials
+    uri: 'https://github.com/ipa320/cob_calibration_data.git'
+    local-name: cob_calibration_data
+    version: indigo_dev
 - git:
-    uri: 'git://github.com/ipa320/cob_scenarios.git'
-    local-name: cob_scenarios
-    version: tutorials
-- git:
-    uri: 'git://github.com/ipa320/cob_scenario_states.git'
-    local-name: cob_scenario_states
-    version: tutorials
-- git:
-    uri: 'git://github.com/ipa320/cob_command_tools.git'
+    uri: 'https://github.com/ipa320/cob_command_tools.git'
     local-name: cob_command_tools
-    version: tutorials
+    version: indigo_dev
 - git:
-    uri: 'git://github.com/ipa320/cob_common.git'
+    uri: 'https://github.com/ipa320/cob_common.git'
     local-name: cob_common
-    version: tutorials
+    version: indigo_dev
 - git:
-    uri: 'git://github.com/ipa320/cob_driver.git'
+    uri: 'https://github.com/ipa320/cob_control.git'
+    local-name: cob_control
+    version: indigo_dev
+- git:
+    uri: 'https://github.com/ipa320/cob_driver.git'
     local-name: cob_driver
-    version: tutorials
+    version: indigo_dev
 - git:
-    uri: 'git://github.com/ipa320/cob_environments.git'
+    uri: 'https://github.com/ipa320/cob_environments.git'
     local-name: cob_environments
-    version: tutorials
+    version: indigo_dev
 - git:
-    uri: 'git://github.com/ipa320/cob_manipulation.git'
-    local-name: cob_manipulation
-    version: tutorials
+    uri: 'https://github.com/ipa320/cob_extern.git'
+    local-name: cob_extern
+    version: indigo_dev
 - git:
-    uri: 'git://github.com/ipa320/cob_manipulation_sandbox.git'
-    local-name: cob_manipulation_sandbox
-    version: tutorials
+    uri: 'https://github.com/ipa320/cob_gazebo_plugins.git'
+    local-name: cob_gazebo_plugins
+    version: indigo_dev
 - git:
-    uri: 'git://github.com/ipa320/cob_navigation.git'
-    local-name: cob_navigation
-    version: tutorials
+    uri: 'https://github.com/ipa320/cob_perception_common.git'
+    local-name: cob_perception_common
+    version: indigo_dev
+- git:
+    uri: 'https://github.com/ipa320/cob_robots.git'
+    local-name: cob_robots
+    version: indigo_dev
+- git:
+    uri: 'https://github.com/ipa320/cob_simulation.git'
+    local-name: cob_simulation
+    version: indigo_dev
+- git:
+    uri: 'https://github.com/ipa320/cob_substitute.git'
+    local-name: cob_substitute
+    version: indigo_dev
+- git:
+    uri: 'https://github.com/ros-industrial/ros_canopen.git'
+    local-name: ros_canopen
+    version: indigo-devel
+- git:
+    uri: 'https://github.com/ipa320/schunk_modular_robotics.git'
+    local-name: schunk_modular_robotics
+    version: indigo_dev
+- git:
+    uri: 'https://github.com/ros-industrial/universal_robot.git'
+    local-name: universal_robot
+    version: indigo-devel
+
+#perception
 - git:
     uri: 'git://github.com/ipa320/cob_object_perception.git'
     local-name: cob_object_perception
-    version: tutorials
+    version: indigo_dev
+
+#navigation
 - git:
-    uri: 'git://github.com/ipa320/cob_robots.git'
-    local-name: cob_robots
-    version: tutorials
+    uri: 'https://github.com/ipa320/cob_navigation.git'
+    local-name: cob_navigation
+    version: indigo_dev
+
+#manipulation
 - git:
-    uri: 'git://github.com/ipa320/cob_simulation.git'
-    local-name: cob_simulation
-    version: tutorials
+    uri: 'https://github.com/ipa320/cob_manipulation.git'
+    local-name: cob_manipulation
+    version: indigo_dev
+
+#scenario
 - git:
-    uri: 'git://github.com/ipa320/schunk_modular_robotics.git'
-    local-name: schunk_modular_robotics
-    version: tutorials
+    uri: 'git://github.com/ipa320/cob_tutorials.git'
+    local-name: cob_tutorials
+- git:
+    uri: 'git://github.com/ipa320/cob_scenario_states.git'
+    local-name: cob_scenario_states
