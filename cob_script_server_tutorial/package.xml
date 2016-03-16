@@ -1,0 +1,24 @@
+<package format="2">
+  <name>cob_script_server_tutorial</name>
+  <version>0.1.0</version>
+  <description>
+    cob_script_server_tutorial
+  </description>
+
+  <license>LGPL</license>
+  <url>http://ros.org/wiki/cob_script_server_tutorial</url>
+
+  <maintainer email="rmb@ipa.fhg.de">Richard Bormann</maintainer>
+  <maintainer email="fmw@ipa.fhg.de">Florian Weisshardt</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>moveit_msgs</exec_depend>
+  <exec_depend>cob_script_server</exec_depend>
+  <exec_depend>cob_bringup_sim</exec_depend>
+  <exec_depend>cob_navigation_global</exec_depend>
+  <exec_depend>cob_default_env_config</exec_depend>
+  <exec_depend>cob_default_robot_config</exec_depend>
+
+</package>
