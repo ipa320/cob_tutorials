@@ -20,4 +20,4 @@ if __name__ == "__main__":
     handle_arm_right.wait()
 
     # robot is ready now
-    sss.say(["I am ready now."])
+    sss.say("sound", ["I am ready now."])
